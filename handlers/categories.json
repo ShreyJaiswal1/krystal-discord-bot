@@ -1,0 +1,52 @@
+{
+	"Categorias": [
+		{
+			"name": "FUN AND GAMES",
+			"description": "All fun and games commands",
+			"emoji": "952140270940618835",
+			"id": "FUN AND GAMES"
+		},
+		{
+			"name": "MUSIC",
+			"description": "All music commands",
+			"emoji": "951923350698090496",
+			"id": "MUSIC"
+		},
+		{
+			"name": "ADMIN",
+			"description": "All admin commands",
+			"emoji": "951923413411303485",
+			"id": "ADMIN"
+		},
+		{
+			"name": "MODERATION",
+			"description": "All moderation commands",
+			"emoji": "952140475312275456",
+			"id": "MODERATION"
+		},
+		{
+			"name": "IMAGE",
+			"description": "All images commands",
+			"emoji": "957017473616592958",
+			"id": "IMAGE"
+		},
+		{
+			"name": "NSFW",
+			"description": "All NSFW commands",
+			"emoji": "951936296253800469",
+			"id": "NSFW"
+		},
+		{
+			"name": "MISC",
+			"description": "All misc commands",
+			"emoji": "951924206138962040",
+			"id": "MISC"
+		},
+		{
+			"name": "FILTERS",
+			"description": "All filter commands",
+			"emoji": "951939544486387802",
+			"id": "FILTERS"
+		}
+	]
+}

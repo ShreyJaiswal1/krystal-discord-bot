@@ -1,0 +1,31 @@
+{
+  "PREFIX": "$",
+  "OWNER": ["799272435714883674"],
+  "embedcolor": "YELLOW",
+  "chatbot": "https://api.lebyy.me/dashboard get your chatbot api here",
+  "newsAPI": "https://newsapi.org/",
+  "wrongcolor": "RED",
+  "footertext": "Krystal",
+  "footericon": "footericon of your bot embed messages",
+  "giphy": "giphy API key",
+  "tenor": "tenor API key",
+  "createguild": "id of channel where info about server joined will be posted",
+  "deleteguild": "id of channel where info about server leave will be posted",
+  "support": "support server link of your bot",
+  "invite": "invite link of your bot",
+  "spotify": {
+    "clientID": "spotify client_id",
+    "clientSecret": "spotify clientSecret"
+  },
+  "clientsettings": {
+    "nodes": [
+      {
+        "identifier": "",
+         "host": "",
+         "port": 8080,
+         "password": ""
+       }
+     ]
+  }
+
+}

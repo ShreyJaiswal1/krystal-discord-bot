@@ -1,0 +1,79 @@
+const { MessageEmbed } = require("discord.js");
+const config = require("../../config.json");
+
+module.exports = {
+  name: "ban",
+   description: "Bans the mentioned user.",
+   cooldown: "10s",
+   aliases: ["hackban"],
+   category: "MODERATION",
+   expectedArgs: "<user_mention> [reason]",
+   callback: async ({message, client, prefix, args}) => {
+     try {
+    const target = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
+    
+    const reason = args.slice(1).join(" ");
+    
+    if(!message.member.hasPermission("BAN_MEMBERS")) return message.reply(`**You don't have enough powers to ban someone**`);
+    
+    if(!message.guild.me.hasPermission("BAN_MEMBERS")) return message.reply(`**I don't have powers to ban someone**`);
+    
+    if(!args[0]) return message.reply(`**Please mention someone to ban**`);
+    
+    if(!target) return message.reply(`**I can't find that member**`);
+   
+ 
+    
+    if(target.id === message.author.id) return message.reply(`**You can't ban yourself**`);
+    
+    if(target.bannable) {
+      let embed = new MessageEmbed()
+      .setColor(config.embedcolor)
+      .setFooter(config.footertext, config.footericon)
+      .setTitle("SUCESSFULLY BANNED USER!!")
+      .setDescription(`Banned ${target} for \`${reason || "No Reason Provided"}\``);
+      message.channel.send(embed);
+      
+      target.ban({
+      reason: `${reason || "NO REASON GIVEN"}`
+      });
+      
+      try{
+     let banEmbed = new MessageEmbed()
+     .setTitle(`YOU HAVE BEEN BANNED`)
+     .setColor(config.embedcolor)
+     .setDescription(`Guild Name: **${message.guild.name}**\nModerator: **${message.author.tag}**\nReason: **${reason || "No reason given"}**`);
+     target.send(banEmbed);
+     
+      } catch(err) {
+        message.channel.send("**I could not dm user because their dm is off**");
+      }
+    } else {
+      return message.reply(`**I can't ban them, make sure that my role is above of theirs**`);
+    }
+    return undefined;
+   
+} catch(error) {
+  
+  console.log(error);
+  
+  message.channel.send({embed: {
+    title: ":x: | ERROR",
+    description: "An error occurred while executing this command",
+    color: config.wrongcolor,
+    footer: {
+      text: config.footertext,
+      icon_url: config.footericon
+    }
+  }});
+}
+}
+};
+/**
+ * @INFO
+ BOT CODED BY SHREY#5420 
+ PLEASE MENTION HIM WHILE USING THIS CODE
+ PLEASE DONT MISUSE CODE FOR RESELLING OR GIVEAWAY
+* @INFO
+ LISENCE - GENERAL PUBLIC LISENCE V3 (GPL V3.0)
+**/

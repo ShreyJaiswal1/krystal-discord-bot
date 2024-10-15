@@ -1,0 +1,64 @@
+{
+    "live": [
+        {
+            "name": "chill",
+            "url": "https://www.youtube.com/watch?v=36YnV9STBqc"
+        },
+        {
+            "name": "bollywood",
+            "url": "https://www.youtube.com/watch?v=BxhDqNeTHKM"
+        },
+        {
+            "name": "oldvsnew",
+            "url": "https://www.youtube.com/watch?v=CT8ti6HcDvc"
+        },
+        {
+            "name": "chillout",
+            "url": "https://www.youtube.com/watch?v=9UMxZofMNbA"
+        },
+        {
+            "name": "lofi",
+            "url": "https://www.youtube.com/watch?v=5qap5aO4i9A"
+        },
+        {
+            "name": "summermusic",
+            "url": "https://www.youtube.com/watch?v=A7J2TgMi4xA"
+        },
+        {
+            "name": "trapmusic",
+            "url": "https://www.youtube.com/watch?v=v3jpVUOi9XU"
+        },
+        {
+            "name": "nightcore",
+            "url": "https://www.youtube.com/watch?v=dhMs18GbPIg"
+        },
+        {
+            "name": "edm",
+            "url": "https://www.youtube.com/watch?v=iIPKxEghUzA"
+        },
+        {
+            "name": "sleep",
+            "url": "https://www.youtube.com/watch?v=omdPNxQNAh4"
+        },
+        {
+            "name": "electro",
+            "url": "https://www.youtube.com/watch?v=qWf-FPFmVw0"
+        },
+        {
+            "name": "bassboosted",
+            "url": "https://www.youtube.com/watch?v=lUgCvdyFbIE"
+        },
+        {
+            "name": "meditation",
+            "url": "https://www.youtube.com/watch?v=gZKbmII_b7Y"
+        },
+        {
+            "name": "pianomusic",
+            "url": "https://www.youtube.com/watch?v=Eo5RPdTt0e0"
+        },
+        {
+            "name": "ncs",
+            "url": "https://www.youtube.com/watch?v=7tNtU5XFwrU"
+        }
+    ]
+}
